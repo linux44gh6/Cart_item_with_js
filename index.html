@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/d90cb7d9fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- navbar -->
-     <div class="flex justify-around">
+     <div class="flex justify-around py-2 bg-red-100 border-t-2 border-red-500">
         <div>
-            <ul class="flex gap-5 uppercase">
+            <ul class="flex items-center gap-5 uppercase">
+                <i class="fa-solid fa-pepper-hot text-5xl text-red-500"></i>
                 <li>Menu</li>
                 <li>Rewards</li>
                 <li>Location</li>
@@ -19,8 +20,14 @@
                 <li>Log In</li>
             </ul>
         </div>
-        <div>
-            <button class="uppercase bg-red-500 border text-white py-1 px-4">order now</button>
+        <div class="flex items-center gap-2">
+           <div class=" relative">
+            <i class="fa-solid fa-bag-shopping text-3xl"> </i>
+            
+                <span class="absolute top-1 left-3 ps-1 rounded-full w-4 order-1 bg-red-500 text-white">0</span>
+
+           </div>
+            <button class="uppercase bg-red-500 border text-white py-1 px-4 rounded-[5px]">order now</button>
         </div>
      </div>
 </body>

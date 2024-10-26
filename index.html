@@ -47,53 +47,8 @@
       </div>
 
       <!-- card section -->
-       <div class="w-[80%] mx-auto grid grid-cols-3 gap-5 px-36">
-        <div class="max-w-xs rounded   shadow-lg  p-2 bg-gray-200">
-            <div class="relative">
-                <img id="productImage" class="w-full h-38 object-fill rounded-md" src="/img/fried chicked.jpg" alt="Chicken">
-                <span class="absolute -top-5 -left-8 -rotate-45 bg-red-500 text-white text-xs font-bold px-2 py-1 order-5 rounded-full">NEW</span>
-               
-            </div>
-            <div class="">
-                <h3 id="productName" class="font-bold text-lg text-gray-800">Chicken</h3>
-                <p class="text-gray-600 text-sm">$<span id="productPrice">6.95</span>/each</p>
-                <p class="text-gray-700 text-sm mt-2">Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream.</p>
-            </div>
-            <div class="flex flex-col space-y-2 mt-2">
-                <button onclick="addToCart()" class="bg-red-500 text-white font-bold py-2 px-4 rounded">Add to Order</button>
-                <button class="border border-red-500 text-red-500 font-bold py-2 px-4 rounded">Customize</button>
-            </div>
-        </div>
-        <div class="max-w-xs rounded   shadow-lg  p-2 bg-gray-200">
-            <div class="relative">
-                <img class="w-full h-38 object-fill rounded-md" src="/img/fried chicked.jpg" alt="Chicken">
-            </div>
-            <div class="">
-                <h3 class="font-bold text-lg text-gray-800">Chicken</h3>
-                <p class="text-gray-600 text-sm">$<span>6.95</span>/each</p>
-                <p class="text-gray-700 text-sm mt-2">Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream.</p>
-            </div>
-            <div class="flex flex-col space-y-2 mt-2">
-                <button class="bg-red-500 text-white font-bold py-2 px-4 rounded">Add to Order</button>
-                <button class="border border-red-500 text-red-500 font-bold py-2 px-4 rounded">Customize</button>
-            </div>
-        </div>
-        <div class="max-w-xs rounded   shadow-lg  p-2 bg-gray-200">
-            <div class="relative">
-                <img class="w-full h-38 object-fill rounded-md" src="/img/fried chicked.jpg" alt="Chicken">
-                <span class="absolute -top-5 -left-8 -rotate-45 bg-red-500 text-white text-xs font-bold px-2 py-1 order-5 rounded-full">NEW</span>
-               
-            </div>
-            <div class="">
-                <h3 class="font-bold text-lg text-gray-800">Chicken</h3>
-                <p class="text-gray-600 text-sm">$<span>6.95</span>/each</p>
-                <p class="text-gray-700 text-sm mt-2">Chicken Fajitas served with rice and beans, tortillas, guacamole, salsa and sour cream.</p>
-            </div>
-            <div class="flex flex-col space-y-2 mt-2">
-                <button onclick="toggleDrawer()" class="bg-red-500 text-white font-bold py-2 px-4 rounded">Add to Order</button>
-                <button class="border border-red-500 text-red-500 font-bold py-2 px-4 rounded">Customize</button>
-            </div>
-        </div>
+       <div id="productContainer" class="w-[80%] mx-auto grid grid-cols-3 gap-5 px-36">
+       
        </div>
 
        <!-- drawer -->
@@ -104,7 +59,7 @@
                     <i class="fa-solid fa-bag-shopping text-xl text-red-500"> </i>
                     <p class="text-red-500"><span>0</span> item</p>
                 </div>
-                <button onclick="toggleDrawer()" class=" border border-red-500 text-red-500 px-2 rounded">Close</button>
+                <button onclick="closeDrawer()" class=" border border-red-500 text-red-500 px-2 rounded">Close</button>
             </div>
             <h2 class="text-xl font-bold text-gray-800 mb-4">Order Details</h2>
             <p class="text-gray-600">Here you can customize or confirm your order.</p>

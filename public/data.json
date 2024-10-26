@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "name": "Chicken Sandwich",
+        "price": "$6.95",
+        "image": "https://i.ibb.co.com/FgQxmnH/fried-chicked.jpg",
+        "description": "A delicious Chicken Sandwich served with lettuce, tomato, and mayo on a toasted bun."
+    },
+    {
+        "id": "2",
+        "name": "Veggie Burger",
+        "price": "$5.50",
+        "image": "https://i.ibb.co.com/FgQxmnH/fried-chicked.jpg",
+        "description": "A flavorful Veggie Burger with a blend of vegetables and spices, topped."
+    },
+    {
+        "id": "3",
+        "name": "Caesar Salad",
+        "price": "$7.25",
+        "image": "https://i.ibb.co.com/FgQxmnH/fried-chicked.jpg",
+        "description": "A classic Caesar Salad with crisp romaine, parmesan cheese, croutons, and Caesar dressing."
+    }
+]

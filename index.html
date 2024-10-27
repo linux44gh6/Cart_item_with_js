@@ -9,28 +9,31 @@
 </head>
 <body>
     <!-- navbar -->
-     <div class="flex justify-around py-2 px-36 bg-red-100 border-t-2 border-red-500">
-        <div>
-            <ul class="flex items-center gap-5 uppercase">
-                <i class="fa-solid fa-pepper-hot text-5xl text-red-500"></i>
-                <li>Menu</li>
-                <li>Rewards</li>
-                <li>Location</li>
-                <li>Gift card</li>
-                <li>Log In</li>
-            </ul>
-        </div>
-        <div class="flex items-center gap-2">
-           <div class=" relative">
-            <i class="fa-solid fa-bag-shopping text-3xl"> </i>
-            
-                <span id="cartQuantity" class="absolute top-1 left-3 ps-1 rounded-full w-4 order-1 bg-red-500 text-white">0</span>
-
-           </div>
-            <button class="uppercase bg-red-500 border text-white py-1 px-4 rounded-[5px]">order now</button>
+     <div class=" border-t-2 border-red-500 bg-red-100">
+        <div class="flex justify-around py-2   w-[87%]">
+            <div>
+                <ul class="flex items-center gap-5 uppercase">
+                    <i class="fa-solid fa-pepper-hot text-5xl text-red-500"></i>
+                    <li>Menu</li>
+                    <li>Rewards</li>
+                    <li>Location</li>
+                    <li>Gift card</li>
+                    <li>Log In</li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+               <div onclick="toggleDrawer()"  class=" relative cursor-pointer hover:scale-125 duration-150">
+                <i class="fa-solid fa-bag-shopping text-3xl"> </i>
+                
+                    <span id="cartQuantity" class="absolute top-1 left-3 ps-1 rounded-full w-4 order-1 bg-red-500 text-white">0</span>
+    
+               </div>
+                <button class="uppercase bg-red-500 border text-white py-1 px-4 rounded-[5px]">order now</button>
+            </div>
         </div>
      </div>
-     <!-- body text -->
+    <div class="w-[90%]">
+         <!-- body text -->
       <div class="w-[800px] mx-auto space-y-3 mt-2">
         <h1 class=" font-semibold text-center text-3xl uppercase text-red-500 flex gap-1 items-center justify-center ">chicken crisper<span class=" border-2 border-red-500 rounded-full text-xs px-1 font-extrabold">R</span>  combos</h1>
         <ul class="flex items-center justify-center gap-1">
@@ -47,21 +50,22 @@
       </div>
 
       <!-- card section -->
-       <div id="productContainer" class="w-[80%] mx-auto grid grid-cols-3 gap-5 px-36">
+       <div id="productContainer" class="w-[90%]  grid grid-cols-3 gap-5 px-36">
        
        </div>
+    </div>
 
        <!-- drawer -->
-       <div id="drawer" class="fixed top-0 right-0 w-56 h-full bg-red-500 shadow-lg transform translate-x-full transition-transform duration-300">
-        <div class="">
-            <div class="h-8 w-full bg-white flex justify-between items-center">
+       <div id="drawer" class="fixed top-0 right-0 w-64  h-full bg-red-500 shadow-lg transform translate-x-full transition-transform duration-300">
+        <div class="w-64">
+            <div class="h-8  bg-white flex justify-between items-center">
                 <div class="flex items-center gap-1">
                     <i class="fa-solid fa-bag-shopping text-xl text-red-500"> </i>
-                    <p class="text-red-500"><span>0</span> item</p>
+                    <p class="text-red-500"><span id="showCartQuantity">0</span> item</p>
                 </div>
                 <button onclick="closeDrawer()" class=" border border-red-500 text-red-500 px-2 rounded">Close</button>
             </div>
-          <div id="cartItemsContainer" class=" px-1">
+          <div id="cartItemsContainer" class=" px-2 pt-3">
 
           </div>
           
